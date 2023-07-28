@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      textStroke: {
+        'black': '0.4px black'
+      },
       fontFamily: {
        'open-sans': ['Open Sans', 'sans-serif'],
        'voces': ['Voces', 'serif'],
