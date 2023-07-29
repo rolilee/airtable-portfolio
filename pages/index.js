@@ -4,15 +4,18 @@ export async function getServerSideProps() {
   const res = await fetch(`${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : 'http://localhost:3000'}/api/users`);
   if (!res.ok) {
     console.error("Failed to fetch users", res.status);
+    // Handle the error as appropriate for your application.
+    // For example, you might return default props, or throw an error to fail the whole page.
     return { props: { users: [] } };
   }
   const data = await res.json();
   return { props: { users: data } };
 }
 
+
 export default function Home({ users }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 font-voces"
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 font-voces" 
      style={{ backgroundImage: `url('/images/background.jpg')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
     >
       {users.slice(2, 3).map((user) => (
