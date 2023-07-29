@@ -16,7 +16,7 @@ export async function getServerSideProps() {
 export default function Home({ users }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 font-voces" 
-     style={{backgroundImage: `url('/images/background.jpg')`, backgroundRepeat: 'no-repeat', backgroundSize: '375px 1000px', backgroundPosition: 'center' }}
+     style={{backgroundImage: `url('/images/background.jpg')`, backgroundRepeat: 'no-repeat', backgroundSize: '400px 1000px', backgroundPosition: 'center' }}
     >
       {users.slice(2, 3).map((user) => (
         <div key={user.id} className="flex flex-col items-center justify-center space-y-4">
