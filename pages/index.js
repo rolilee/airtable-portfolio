@@ -28,23 +28,23 @@ export default function Home({ users }) {
             </h1>}
           {user.fields['Position and company name'] &&
             <p className="text-1xl leading-6 tracking-wider" style={{ marginBottom: '50px', color: '#FFFAFA' }}>{user.fields['Position and company name']}</p>}
-          <div className={`flex ${user.fields.WhatsApp ? 'justify-between' : 'justify-center'} w-96 mb-4`} style={{ marginBottom: '50px' }}>
+          <div className={`flex ${user.fields.WhatsApp ? 'justify-between' : 'justify-center'} w-96 mb-4`} style={{ padding: '0px 70px', marginBottom: '50px' }}>
             {user.fields['Phone number'] && 
               <a href={`tel:${user.fields['Phone number']}`} className={`${user.fields.WhatsApp ? '' : 'mr-3'}`}>
                 <div className="inline-block">
-                  <img src="/phone.svg" className="h-11 w-11" alt="Phone" />
+                  <img src="/phone.svg" className="h-7 w-7" alt="Phone" />
                 </div>
               </a>}
             {user.fields.Email && 
               <a href={`mailto:${user.fields.Email}`} className={`${user.fields.WhatsApp ? '' : 'ml-20'}`}>
                 <div className="inline-block">
-                  <img src="/email.svg" className="h-11 w-11" alt="Email" />
+                  <img src="/email.svg" className="h-7 w-7" alt="Email" />
                 </div>
               </a>}
             {user.fields.WhatsApp &&
               <a href={`https://wa.me/${user.fields.WhatsApp}`}>
                 <div className="inline-block">
-                  <img src="/whatsapp.svg" className="h-11 w-11" alt="WhatsApp" />
+                  <img src="/whatsapp.svg" className="h-7 w-7" alt="WhatsApp" />
                 </div>
               </a>}
           </div>
