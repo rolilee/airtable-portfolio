@@ -23,11 +23,11 @@ export default function Home({ users }) {
           {user.fields.Photo &&
             <div className="w-50 h-50 bg-center bg-cover rounded-lg my-8" style={{ padding: '70px 70px', backgroundImage: `url(${user.fields.Photo[0].url})`, marginTop: '50px' }}></div>}
           {user.fields['Full name'] &&
-            <h1 className="text-3xl font-bold font-open-sans text-center mt-4 mb-8 tracking-wide" style={{ color: '#FFFAFA' }}>
+            <h1 className="text-2xl font-bold font-open-sans text-center mt-4 mb-8 tracking-wide" style={{ color: '#FFFAFA' }}>
               {user.fields['Full name']}
             </h1>}
           {user.fields['Position and company name'] &&
-            <p className="text-2xl leading-6 tracking-wider" style={{ marginBottom: '50px', color: '#FFFAFA' }}>{user.fields['Position and company name']}</p>}
+            <p className="text-1xl leading-6 tracking-wider" style={{ marginBottom: '50px', color: '#FFFAFA' }}>{user.fields['Position and company name']}</p>}
           <div className={`flex ${user.fields.WhatsApp ? 'justify-between' : 'justify-center'} w-96 mb-4`} style={{ marginBottom: '50px' }}>
             {user.fields['Phone number'] && 
               <a href={`tel:${user.fields['Phone number']}`} className={`${user.fields.WhatsApp ? '' : 'mr-3'}`}>
