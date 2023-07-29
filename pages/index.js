@@ -49,13 +49,13 @@ export default function Home({ users }) {
               </a>}
           </div>
           {user.fields.Website &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 300px', fontSize: '19px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Website, '_blank')}><strong>Website</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 200px', fontSize: '19px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Website, '_blank')}><strong>Website</strong></button>}
           {user.fields.LinkedIn &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 297px', fontSize: '19px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.LinkedIn, '_blank')}><strong>LinkedIn</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 197px', fontSize: '19px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.LinkedIn, '_blank')}><strong>LinkedIn</strong></button>}
           {user.fields.Facebook &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 294px', fontSize: '19px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Facebook, '_blank')}><strong>Facebook</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 194px', fontSize: '19px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Facebook, '_blank')}><strong>Facebook</strong></button>}
           {user.fields.Instagram &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 292px', fontSize: '19px', marginBottom: '70px', color: '#656539' }} onClick={() => window.open(user.fields.Instagram, '_blank')}><strong>Instagram</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '20px 192px', fontSize: '19px', marginBottom: '70px', color: '#656539' }} onClick={() => window.open(user.fields.Instagram, '_blank')}><strong>Instagram</strong></button>}
           <button style={{ backgroundColor: '#9B9B43', borderRadius: '50px', padding: '20px 50px', fontSize: '19px', marginBottom: '50px', color: '#FFFAFA' }} onClick={() => window.open('https://www.netink.ch/', '_blank')}><strong>Open in NetInk App</strong></button>
         </div>
       ))}
