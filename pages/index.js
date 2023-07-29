@@ -21,7 +21,7 @@ export default function Home({ users }) {
       {users.slice(2, 3).map((user) => (
         <div key={user.id} className="flex flex-col items-center justify-center space-y-4">
           {user.fields.Photo &&
-            <div className="w-50 h-50 bg-center bg-cover rounded-lg my-8" style={{ padding: '70px 70px', backgroundImage: `url(${user.fields.Photo[0].url})`, marginTop: '50px' }}></div>}
+            <div className="w-50 h-50 bg-center bg-cover rounded-lg my-8" style={{ padding: '70px 70px', backgroundImage: `url(${user.fields.Photo[0].url})`, marginTop: '40px' }}></div>}
           {user.fields['Full name'] &&
             <h1 className="text-2xl font-bold font-open-sans text-center mt-4 mb-8 tracking-wide" style={{fontSize: '20px', color: '#FFFAFA' }}>
               {user.fields['Full name']}
@@ -56,7 +56,7 @@ export default function Home({ users }) {
             <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 114px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Facebook, '_blank')}><strong>Facebook</strong></button>}
           {user.fields.Instagram &&
             <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 112px', fontSize: '15px', marginBottom: '70px', color: '#656539' }} onClick={() => window.open(user.fields.Instagram, '_blank')}><strong>Instagram</strong></button>}
-          <button style={{ backgroundColor: '#9B9B43', borderRadius: '50px', padding: '15px 30px', fontSize: '15px', marginBottom: '50px', color: '#FFFAFA' }} onClick={() => window.open('https://www.netink.ch/', '_blank')}><strong>Open in NetInk App</strong></button>
+          <button style={{ backgroundColor: '#9B9B43', borderRadius: '50px', padding: '15px 30px', fontSize: '15px', marginBottom: '30px', color: '#FFFAFA' }} onClick={() => window.open('https://www.netink.ch/', '_blank')}><strong>Open in NetInk App</strong></button>
         </div>
       ))}
     </div>
