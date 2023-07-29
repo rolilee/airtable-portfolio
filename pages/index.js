@@ -21,7 +21,7 @@ export default function Home({ users }) {
       {users.slice(2, 3).map((user) => (
         <div key={user.id} className="flex flex-col items-center justify-center space-y-4">
           {user.fields.Photo &&
-            <div className="w-64 h-64 bg-center bg-cover rounded-lg my-8" style={{ backgroundImage: `url(${user.fields.Photo[0].url})`, marginTop: '50px' }}></div>}
+            <div className="w-50 h-50 bg-center bg-cover rounded-lg my-8" style={{ padding: '70px 70px', backgroundImage: `url(${user.fields.Photo[0].url})`, marginTop: '50px' }}></div>}
           {user.fields['Full name'] &&
             <h1 className="text-3xl font-bold font-open-sans text-center mt-4 mb-8 tracking-wide" style={{ color: '#FFFAFA' }}>
               {user.fields['Full name']}
