@@ -32,31 +32,31 @@ export default function Home({ users }) {
             {user.fields['Phone number'] && 
               <a href={`tel:${user.fields['Phone number']}`} className={`${user.fields.WhatsApp ? '' : 'mr-3'}`}>
                 <div className="inline-block">
-                  <img src="/phone.svg" className="h-7 w-7" alt="Phone" />
+                  <img src="/phone.svg" className="h-8 w-8" alt="Phone" />
                 </div>
               </a>}
             {user.fields.Email && 
               <a href={`mailto:${user.fields.Email}`} className={`${user.fields.WhatsApp ? '' : 'ml-20'}`}>
                 <div className="inline-block">
-                  <img src="/email.svg" className="h-7 w-7" alt="Email" />
+                  <img src="/email.svg" className="h-8 w-8" alt="Email" />
                 </div>
               </a>}
             {user.fields.WhatsApp &&
               <a href={`https://wa.me/${user.fields.WhatsApp}`}>
                 <div className="inline-block">
-                  <img src="/whatsapp.svg" className="h-7 w-7" alt="WhatsApp" />
+                  <img src="/whatsapp.svg" className="h-8 w-8" alt="WhatsApp" />
                 </div>
               </a>}
           </div>
           {user.fields.Website &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 120px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Website, '_blank')}><strong>Website</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 100px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Website, '_blank')}><strong>Website</strong></button>}
           {user.fields.LinkedIn &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 117px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.LinkedIn, '_blank')}><strong>LinkedIn</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 97px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.LinkedIn, '_blank')}><strong>LinkedIn</strong></button>}
           {user.fields.Facebook &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 114px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Facebook, '_blank')}><strong>Facebook</strong></button>}
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 94px', fontSize: '15px', marginBottom: '20px', color: '#656539' }} onClick={() => window.open(user.fields.Facebook, '_blank')}><strong>Facebook</strong></button>}
           {user.fields.Instagram &&
-            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 112px', fontSize: '15px', marginBottom: '70px', color: '#656539' }} onClick={() => window.open(user.fields.Instagram, '_blank')}><strong>Instagram</strong></button>}
-          <button style={{ backgroundColor: '#9B9B43', borderRadius: '50px', padding: '15px 30px', fontSize: '15px', marginBottom: '50px', color: '#FFFAFA' }} onClick={() => window.open('https://www.netink.ch/', '_blank')}><strong>Open in NetInk App</strong></button>
+            <button style={{ backgroundColor: '#FFFAFA', borderRadius: '10px', padding: '15px 92px', fontSize: '15px', marginBottom: '70px', color: '#656539' }} onClick={() => window.open(user.fields.Instagram, '_blank')}><strong>Instagram</strong></button>}
+          <button style={{ backgroundColor: '#9B9B43', borderRadius: '50px', padding: '15px 25px', fontSize: '15px', marginBottom: '50px', color: '#FFFAFA' }} onClick={() => window.open('https://www.netink.ch/', '_blank')}><strong>Open in NetInk App</strong></button>
         </div>
       ))}
     </div>
