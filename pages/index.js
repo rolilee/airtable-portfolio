@@ -1,9 +1,17 @@
 import axios from 'axios';
 
 export async function getServerSideProps() {
-  const response = await axios.get('http://localhost:3000/api/users');
-  return { props: { users: response.data } };
+  const res = await fetch(`${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : 'http://localhost:3000'}/api/users`);
+  if (!res.ok) {
+    console.error("Failed to fetch users", res.status);
+    // Handle the error as appropriate for your application.
+    // For example, you might return default props, or throw an error to fail the whole page.
+    return { props: { users: [] } };
+  }
+  const data = await res.json();
+  return { props: { users: data } };
 }
+
 
 export default function Home({ users }) {
   return (
