@@ -18,7 +18,7 @@ export default function Home({ users }) {
     <div className="flex flex-col items-center justify-center min-h-screen py-2 font-voces" 
      style={{backgroundImage: `url('/images/background.jpg')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
     >
-      {users.slice(2, 3).map((user) => (
+      {users.slice(1, 2).map((user) => (
         <div key={user.id} className="flex flex-col items-center justify-center space-y-4">
           {user.fields.Photo &&
             <div className="w-50 h-50 bg-center bg-cover rounded-lg my-8" style={{ padding: '70px 70px', backgroundImage: `url(${user.fields.Photo[0].url})`, marginTop: '40px' }}></div>}
