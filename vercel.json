@@ -1,7 +1,7 @@
 {
     "redirects": [
       {
-        "source": "https://netink.ch/(.*)",
+        "source": "https://netink.ch/yevgenii-garnaga",
         "destination": "https://www.netink.ch/$1",
         "permanent": true
       }
