@@ -2,7 +2,7 @@
     "redirects": [
       {
         "source": "https://netink.ch/yevgenii-garnaga",
-        "destination": "https://www.netink.ch/$1",
+        "destination": "https://www.netink.ch/yevgenii-garnaga",
         "permanent": true
       }
     ]
