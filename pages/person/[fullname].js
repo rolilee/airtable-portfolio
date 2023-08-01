@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const records = await base('TABLE_NAME').select().firstPage();
+  const records = await base('Selected').select().firstPage();
   const record = records.find(record => 
     slugify(record.get('Full name'), { lower: true, strict: true }) === params.fullname
   );
