@@ -21,6 +21,10 @@ export async function getStaticProps({ params }) {
 }
 
 export default function PersonPage({ person }) {
-  // create your page here
-  // you can access the person's data through the `person` prop
+  return (
+    <div>
+      <h1>{person['Full name']}</h1>
+      {/* add more fields here as needed */}
+    </div>
+  );
 }
