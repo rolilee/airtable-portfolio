@@ -28,3 +28,4 @@ export default function PersonPage({ person }) {
     </div>
   );
 }
+
